@@ -1,9 +1,11 @@
 //Programmers:Xander Gergye - Matthew Clifford
 //Date:5.26.23
 //Program: Competition
+//number:SB-33DF
 
 
 async function startProgram() {
-	// Write code here
+	await scrollMatrixText('START!', {r: 0, g: 255, b: 0 }, 10, true);
+	await roll(90, 200, 2);
 }
 
