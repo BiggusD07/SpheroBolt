@@ -5,18 +5,35 @@
 
 
 async function startProgram() {
-	await scrollMatrixText('START!', {r: 0, g: 255, b: 0 }, 18, true);
-	await roll(0, 100, 1.5);
+	await scrollMatrixText('Start', {r: 0, g: 255, b: 0 }, 18, true);
+	await roll(0, 50, 3.6);
+	await delay(3)
+	
 	setMainLed({r: 0, g: 0, b: 255});
-	await roll(90, 38, 3);
+	await roll(90, 50, 2.52);
+	
+	await delay(3)
 	await Sound.Animal.play(true);
 	await roll(180, 46, 2);
-	await roll(220, 44.1, 2);
+	await delay(3)
+	
+	await roll(220, 42.5, 2);
+	await delay(3)
 	setMainLed({r: 255, g: 0, b: 0});
-	await roll(130, 36.6, 2);
+	
+	await delay(3)
+	await roll(130, 35, 2);
+	
+	await delay(3)
 	await roll(42, 45, 2);
+	
+	await delay(3)
 	await Sound.Animal.play(true);
-	await roll(110, 40, 2);
+	await roll(130, 25, 3.85);
+	await delay(3)
+
+	await roll(230, 25, 4)
+	await delay(3)
 
 }
 
